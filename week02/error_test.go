@@ -1,4 +1,4 @@
-package lesson2
+package week02
 
 import (
 	"database/sql"
@@ -8,7 +8,11 @@ import (
 )
 
 func Test1(t *testing.T) {
-	//client执行内容
+	week02()
+}
+
+//week02 sql.ErrNoRows的错误处理
+func week02() {
 	if err := doStore(); err != nil {
 		fmt.Printf("%+v", err)
 	}
